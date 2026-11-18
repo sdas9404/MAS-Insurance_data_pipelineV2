@@ -1,0 +1,152 @@
+[
+  {
+    "path": "config/sampling.yaml",
+    "size": 970,
+    "sha256": "95f311c9ace28383091b776e2889838f3e630a93bf98d0ae1a2b5f8c327496d4"
+  },
+  {
+    "path": "scripts/generate_unlabeled.py",
+    "size": 8283,
+    "sha256": "d0ff66dc857c291fbf291b939138909807326a870e42cb9d1ceb5d5c5ec71c36"
+  },
+  {
+    "path": "scripts/validate_inputs.py",
+    "size": 2083,
+    "sha256": "acac2ad52f9a8c370db8739dd50c370ec95f4484292419f7645ae30a593e4697"
+  },
+  {
+    "path": "tests/test_foundation.py",
+    "size": 2121,
+    "sha256": "037ccd0363a0e5c44de42744c8517e6bb84c22b734b983ab73e0f1e2a792ecc7"
+  },
+  {
+    "path": "data/manifest/run_001_driver_parameters.csv",
+    "size": 16404,
+    "sha256": "156ccfb843bd3c6618aaeccbc4d7e251ea1163b24d578a779fc183dff169e60c"
+  },
+  {
+    "path": "data/manifest/run_001_driver_parameters.parquet",
+    "size": 23527,
+    "sha256": "9f36bafc2528beb3acf64cc5fff55b091db210a8912c1c39e8f00c415da235db"
+  },
+  {
+    "path": "data/manifest/run_001_run.json",
+    "size": 237,
+    "sha256": "a2337fc5bc2154d6b8e87e6e600f364f2c8bc363a201c5ff23321d422c1cae9e"
+  },
+  {
+    "path": "data/manifest/run_001_trips.csv",
+    "size": 54482,
+    "sha256": "9606438ea9f1bbacb0233edbd8b79170f67fa08a1aaf55a2dd2b5bd9a32e4b34"
+  },
+  {
+    "path": "data/manifest/run_001_trip_manifest.parquet",
+    "size": 20267,
+    "sha256": "a1cb2d8c2ea167caa26ca3b73c689157fa9620ba3bcb8c8948bc9f80dc66e6d6"
+  },
+  {
+    "path": "data/raw/inspect_D083_D087/collisions.xml",
+    "size": 1660,
+    "sha256": "5ad5a122fc6071a7d0e82ff87cb62548802fb445211f8c2ca2b0d0cfb490e557"
+  },
+  {
+    "path": "data/raw/inspect_D083_D087/fcd.xml",
+    "size": 1413714,
+    "sha256": "320d22e9b2cce092ddb40e17886463516850dcd16e36bed2e48d9cb3b8ec3826"
+  },
+  {
+    "path": "data/raw/inspect_D083_D087/ssm.xml",
+    "size": 7873,
+    "sha256": "949a96e3bfe6119dbe7550efcd4ddd9e42961f8f88d8b75c16b50272318c6a0a"
+  },
+  {
+    "path": "data/raw/run_001/collisions.xml",
+    "size": 1311,
+    "sha256": "b50cae7f759c53b37916e194330da235c0bdc50e03c337a1107709eb117275a9"
+  },
+  {
+    "path": "data/raw/run_001/lanechanges.xml",
+    "size": 2927,
+    "sha256": "6005930622534824664b741c3abfd09463218ab3206c381fef7e94439bfd3b5d"
+  },
+  {
+    "path": "data/raw/run_001/tripinfo.xml",
+    "size": 10136,
+    "sha256": "2c70fcad5499a671365395923952b1c3650ff9c65f44935c8f5ee0cee39e0c12"
+  },
+  {
+    "path": "data/raw/validation_1800/collisions.xml",
+    "size": 1374,
+    "sha256": "2f78024315c7dc86a46b206ecbcce3b4a1562977da135206de3489a39ba69b1d"
+  },
+  {
+    "path": "data/raw/validation_1800/tripinfo.xml",
+    "size": 38484,
+    "sha256": "ce18c2fefaf2ee4598d48342dd4e066b97c8573e03a0d5b93f5449c8544d9ac0"
+  },
+  {
+    "path": "data/raw/validation_safety/collisions.xml",
+    "size": 1613,
+    "sha256": "73167e6ff7589870e8f78d601b1cd7f0d0cea4f5d33d9ba2d8ecb6edfb149409"
+  },
+  {
+    "path": "data/raw/validation_safety/lanechanges.xml",
+    "size": 30323,
+    "sha256": "1884f8f465ca295d8a9e23407834399c243fa3cd11567a130615b937a7ec8a3d"
+  },
+  {
+    "path": "data/raw/validation_safety/ssm.xml",
+    "size": 58982,
+    "sha256": "ff936e73b22a2dece388fa7be7e50615d8043da9032074acc70d67c74ec10007"
+  },
+  {
+    "path": "data/raw/validation_safety/statistics.xml",
+    "size": 1737,
+    "sha256": "b6bb8aff10fc13f2e95d7f852880e8cc003aeff9550c4368e002b4e2200adf0f"
+  },
+  {
+    "path": "data/raw/validation_safety/tripinfo.xml",
+    "size": 39893,
+    "sha256": "2dd270bb0427dd0461305e5e44d4e366cd7183d3ddce1b76e10c27792a9d4e28"
+  },
+  {
+    "path": "routes/london.rou.xml",
+    "size": 90904,
+    "sha256": "d780ac28c3789fee5f8714c2c6e35530cf1e54426a70b7ba14912c077b710e4f"
+  },
+  {
+    "path": "routes/london.trips.xml",
+    "size": 22676,
+    "sha256": "439c3776951b09e96c80075e8edfd7fa9e9314dc3726dbb098155554724b970e"
+  },
+  {
+    "path": "routes/run_001_900.rou.xml",
+    "size": 355528,
+    "sha256": "127d09b813f2f998e9293961eaa3f77c01643c11727ce9672f8bb9de565f1f17"
+  },
+  {
+    "path": "run_001.sumocfg",
+    "size": 842,
+    "sha256": "9961184d0641ae9e2f78bc268d112fb02a3e2630bc614e0201d6d1a5ad4e1a69"
+  },
+  {
+    "path": "README.md",
+    "size": 4062,
+    "sha256": "112740c608e28c48edd4d0e481ff2a92e1017220e04574a87a4bd4e49c6b40dd"
+  },
+  {
+    "path": "requirements.txt",
+    "size": 101,
+    "sha256": "12b9291d0c05987a8be59f30888024b64eeca6102ff359cd8fc4fec7751e03d7"
+  },
+  {
+    "path": "network/london_filtered.net.xml",
+    "size": 2546831,
+    "sha256": "2f50a8a2954cf936bed9521903c11de86186850f14b519f33cb7f05b53bb786c"
+  },
+  {
+    "path": "network/london.poly.xml",
+    "size": 1538931,
+    "sha256": "2abc7a75421dfbcb3ff528d71e032c664e2497a95d8f95eddff2667da3be417b"
+  }
+]

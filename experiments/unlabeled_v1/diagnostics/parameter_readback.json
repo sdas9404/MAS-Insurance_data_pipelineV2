@@ -1,0 +1,9 @@
+{
+  "sumo_version": [
+    22,
+    "SUMO 1.28.0"
+  ],
+  "checks": 1350,
+  "all_passed": true,
+  "remaining_attributes": "Accepted by installed SUMO parser in smoke and main runs; generic LC/JM attributes lack individual vehicletype getters."
+}

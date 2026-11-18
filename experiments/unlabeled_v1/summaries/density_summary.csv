@@ -1,0 +1,4 @@
+density,successful_runs,mean_concurrent_vehicles,maximum_concurrent_vehicles,mean_study_speed_mps,mean_study_waiting_s,collision_records,study_teleports,background_teleports,red_signal_entries
+low,4,52.535613675261,118,9.455752170268017,68.24719444444445,16,1,15,34
+moderate,4,111.18655128205128,251,5.913242507426649,174.32679833645025,77,8,69,55
+high,4,342.9204038461538,641,3.044051035225818,430.51563442455335,296,33,401,63

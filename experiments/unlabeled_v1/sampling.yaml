@@ -1,0 +1,339 @@
+# Exploratory synthetic priors; not calibrated population statistics. No labels.
+version: unlabeled_v1
+population_seed: 20261117
+schedule_seed: 20261118
+background_parameter_seed: 20261119
+run_seeds:
+- 1103
+- 2207
+- 3301
+- 4409
+n_drivers: 90
+trips_per_driver: 10
+simulation_step_s: 0.1
+telemetry_interval_s: 0.5
+lateral_resolution_m: 0.5
+wave_seconds: 600
+departure_window_s: 240
+clearance_s: 1800
+time_to_teleport_s: 300
+background_per_wave:
+  low: 45
+  moderate: 135
+  high: 270
+dependencies:
+  emergencyDecel: max(sampled emergencyDecel, decel)
+  apparentDecel: decel * apparentDecelRatio
+  lcPushyGap: minGapLat * (1-lcPushy); equivalent alternative encoding, not an independent
+    draw
+  tau: 6% low-tail draw intentionally permits tau < actionStepLength; may reduce safety
+  all_others: independent conditional on constants; no latent classes
+events:
+  harsh_acceleration_mps2: 2.5
+  hard_braking_mps2: 4.0
+  speed_excess_mps: 0.5
+  short_headway_s: 1.0
+  headway_min_speed_mps: 2.0
+  near_miss_ttc_s: 1.5
+parameters:
+  speedFactor:
+    distribution: beta
+    bounds:
+    - 0.77
+    - 1.33
+    shape:
+    - 5.0
+    - 5.0
+  accel:
+    distribution: beta
+    bounds:
+    - 1.2
+    - 3.5
+    shape:
+    - 3.0
+    - 3.0
+  decel:
+    distribution: beta
+    bounds:
+    - 3.2
+    - 5.8
+    shape:
+    - 3.0
+    - 3.0
+  emergencyDecel:
+    distribution: beta
+    bounds:
+    - 6.0
+    - 9.0
+    shape:
+    - 3.0
+    - 3.0
+  apparentDecelRatio:
+    distribution: beta
+    bounds:
+    - 0.8
+    - 1.06
+    shape:
+    - 3.0
+    - 3.0
+  sigma:
+    distribution: beta
+    bounds:
+    - 0.05
+    - 0.9
+    shape:
+    - 2.0
+    - 4.0
+  minGap:
+    distribution: beta
+    bounds:
+    - 0.9
+    - 4.0
+    shape:
+    - 3.0
+    - 3.0
+  startupDelay:
+    distribution: beta
+    bounds:
+    - 0.0
+    - 1.5
+    shape:
+    - 2.0
+    - 4.0
+  lcStrategic:
+    distribution: beta
+    bounds:
+    - 0.4
+    - 2.5
+    shape:
+    - 3.0
+    - 4.0
+  lcCooperative:
+    distribution: beta
+    bounds:
+    - 0.05
+    - 1.0
+    shape:
+    - 4.0
+    - 2.0
+  lcSpeedGain:
+    distribution: beta
+    bounds:
+    - 0.25
+    - 3.0
+    shape:
+    - 3.0
+    - 4.0
+  lcKeepRight:
+    distribution: beta
+    bounds:
+    - 0.3
+    - 2.5
+    shape:
+    - 3.0
+    - 3.0
+  lcAssertive:
+    distribution: beta
+    bounds:
+    - 0.75
+    - 2.0
+    shape:
+    - 2.0
+    - 5.0
+  lcSigma:
+    distribution: beta
+    bounds:
+    - 0.0
+    - 0.45
+    shape:
+    - 2.0
+    - 5.0
+  minGapLat:
+    distribution: beta
+    bounds:
+    - 0.25
+    - 0.8
+    shape:
+    - 3.0
+    - 3.0
+  lcPushy:
+    distribution: beta
+    bounds:
+    - 0.0
+    - 0.6
+    shape:
+    - 1.5
+    - 6.0
+  lcImpatience:
+    distribution: beta
+    bounds:
+    - 0.0
+    - 0.6
+    shape:
+    - 2.0
+    - 4.0
+  lcAccelLat:
+    distribution: beta
+    bounds:
+    - 0.5
+    - 1.8
+    shape:
+    - 3.0
+    - 3.0
+  lcSublane:
+    distribution: beta
+    bounds:
+    - 0.5
+    - 1.5
+    shape:
+    - 3.0
+    - 3.0
+  maxSpeedLat:
+    distribution: beta
+    bounds:
+    - 0.5
+    - 1.2
+    shape:
+    - 3.0
+    - 3.0
+  impatience:
+    distribution: beta
+    bounds:
+    - 0.0
+    - 0.8
+    shape:
+    - 2.0
+    - 5.0
+  jmDriveRedSpeed:
+    distribution: beta
+    bounds:
+    - 3.0
+    - 8.0
+    shape:
+    - 3.0
+    - 3.0
+  jmTimegapMinor:
+    distribution: beta
+    bounds:
+    - 0.7
+    - 1.5
+    shape:
+    - 3.0
+    - 3.0
+  length:
+    distribution: beta
+    bounds:
+    - 3.7
+    - 5.3
+    shape:
+    - 3.0
+    - 3.0
+  width:
+    distribution: beta
+    bounds:
+    - 1.65
+    - 2.1
+    shape:
+    - 3.0
+    - 3.0
+  mass:
+    distribution: beta
+    bounds:
+    - 1000.0
+    - 2300.0
+    shape:
+    - 3.0
+    - 4.0
+  maxSpeed:
+    distribution: beta
+    bounds:
+    - 33.3
+    - 50.0
+    shape:
+    - 3.0
+    - 3.0
+  tau:
+    distribution: mixture
+    weights:
+    - 0.94
+    - 0.06
+    components:
+    - distribution: beta
+      bounds:
+      - 0.85
+      - 2.4
+      shape:
+      - 3
+      - 4
+    - distribution: beta
+      bounds:
+      - 0.28
+      - 0.65
+      shape:
+      - 2
+      - 2
+  actionStepLength:
+    distribution: choice
+    values:
+    - 0.2
+    - 0.4
+    - 0.6
+    - 0.8
+    - 1.0
+    weights:
+    - 0.1
+    - 0.25
+    - 0.35
+    - 0.2
+    - 0.1
+  jmDriveAfterRedTime:
+    distribution: mixture
+    weights:
+    - 0.94
+    - 0.06
+    components:
+    - distribution: constant
+      value: -1
+    - distribution: beta
+      bounds:
+      - 0.2
+      - 2
+      shape:
+      - 2
+      - 4
+  jmIgnoreFoeProb:
+    distribution: mixture
+    weights:
+    - 0.95
+    - 0.05
+    components:
+    - distribution: constant
+      value: 0
+    - distribution: beta
+      bounds:
+      - 0.002
+      - 0.025
+      shape:
+      - 2
+      - 5
+  lcMaxSpeedLatStanding:
+    distribution: constant
+    value: 0
+  jmIgnoreFoeSpeed:
+    distribution: constant
+    value: 10
+  emissionClass:
+    distribution: constant
+    value: HBEFA3/PC_G_EU6
+  vClass:
+    distribution: constant
+    value: passenger
+  speedDev:
+    distribution: constant
+    value: 0
+  carFollowModel:
+    distribution: constant
+    value: Krauss
+  laneChangeModel:
+    distribution: constant
+    value: SL2015

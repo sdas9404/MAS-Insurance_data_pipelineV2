@@ -1,0 +1,142 @@
+{
+  "expected_main_runs": 12,
+  "executions_finished": 12,
+  "validated_runs": 12,
+  "planned_study_trips": 10800,
+  "arrivals_in_finished_runs": 9646,
+  "runs": [
+    {
+      "run_id": "run_001",
+      "density": "low",
+      "seed": 1103,
+      "planned_study_trips": 900,
+      "state": "validated",
+      "inserted": 900,
+      "arrived": 900,
+      "telemetry_rows": 667752,
+      "simulation_s": 6207.7
+    },
+    {
+      "run_id": "run_002",
+      "density": "low",
+      "seed": 2207,
+      "planned_study_trips": 900,
+      "state": "validated",
+      "inserted": 900,
+      "arrived": 900,
+      "telemetry_rows": 650857,
+      "simulation_s": 6539.8
+    },
+    {
+      "run_id": "run_003",
+      "density": "low",
+      "seed": 3301,
+      "planned_study_trips": 900,
+      "state": "validated",
+      "inserted": 900,
+      "arrived": 900,
+      "telemetry_rows": 657832,
+      "simulation_s": 6269.3
+    },
+    {
+      "run_id": "run_004",
+      "density": "low",
+      "seed": 4409,
+      "planned_study_trips": 900,
+      "state": "validated",
+      "inserted": 900,
+      "arrived": 900,
+      "telemetry_rows": 676836,
+      "simulation_s": 6269.8
+    },
+    {
+      "run_id": "run_005",
+      "density": "moderate",
+      "seed": 1103,
+      "planned_study_trips": 900,
+      "state": "validated",
+      "inserted": 868,
+      "arrived": 851,
+      "telemetry_rows": 1656891,
+      "simulation_s": 7800.0
+    },
+    {
+      "run_id": "run_006",
+      "density": "moderate",
+      "seed": 2207,
+      "planned_study_trips": 900,
+      "state": "validated",
+      "inserted": 880,
+      "arrived": 866,
+      "telemetry_rows": 1569824,
+      "simulation_s": 7800.0
+    },
+    {
+      "run_id": "run_007",
+      "density": "moderate",
+      "seed": 3301,
+      "planned_study_trips": 900,
+      "state": "validated",
+      "inserted": 874,
+      "arrived": 856,
+      "telemetry_rows": 1876426,
+      "simulation_s": 7800.0
+    },
+    {
+      "run_id": "run_008",
+      "density": "moderate",
+      "seed": 4409,
+      "planned_study_trips": 900,
+      "state": "validated",
+      "inserted": 884,
+      "arrived": 873,
+      "telemetry_rows": 1829243,
+      "simulation_s": 7800.0
+    },
+    {
+      "run_id": "run_009",
+      "density": "high",
+      "seed": 1103,
+      "planned_study_trips": 900,
+      "state": "validated",
+      "inserted": 728,
+      "arrived": 660,
+      "telemetry_rows": 5194754,
+      "simulation_s": 7800.0
+    },
+    {
+      "run_id": "run_010",
+      "density": "high",
+      "seed": 2207,
+      "planned_study_trips": 900,
+      "state": "validated",
+      "inserted": 749,
+      "arrived": 683,
+      "telemetry_rows": 5097995,
+      "simulation_s": 7800.0
+    },
+    {
+      "run_id": "run_011",
+      "density": "high",
+      "seed": 3301,
+      "planned_study_trips": 900,
+      "state": "validated",
+      "inserted": 708,
+      "arrived": 637,
+      "telemetry_rows": 5509192,
+      "simulation_s": 7800.0
+    },
+    {
+      "run_id": "run_012",
+      "density": "high",
+      "seed": 4409,
+      "planned_study_trips": 900,
+      "state": "validated",
+      "inserted": 691,
+      "arrived": 620,
+      "telemetry_rows": 5473167,
+      "simulation_s": 7800.0
+    }
+  ],
+  "resume_command": "python scripts/research_pipeline.py run; completed runs are skipped and interrupted attempts are archived"
+}

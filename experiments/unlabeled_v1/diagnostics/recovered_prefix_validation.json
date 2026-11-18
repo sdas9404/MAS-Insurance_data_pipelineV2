@@ -1,0 +1,19 @@
+{
+  "comparisons": [
+    {
+      "run_id": "run_010",
+      "attempt": "runs\\run_010\\attempts\\1794957238717712000",
+      "completed_prefix_trips": 2590,
+      "all_prefix_tripinfo_identical": true,
+      "failed_xml_truncated": false
+    },
+    {
+      "run_id": "run_012",
+      "attempt": "runs\\run_012\\attempts\\1794960577935437800",
+      "completed_prefix_trips": 2522,
+      "all_prefix_tripinfo_identical": true,
+      "failed_xml_truncated": false
+    }
+  ],
+  "no_frozen_input_changes": true
+}

@@ -1,0 +1,6 @@
+{
+  "study_drivers": 90,
+  "audit_insertions": 180,
+  "all_replicates_identical": true,
+  "description": "Installed SUMO rounds chosen per-vehicle speed factors using precision.random (default 4), even though the vType input retains full precision. No main priors changed."
+}

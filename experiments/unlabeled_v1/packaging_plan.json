@@ -1,0 +1,9 @@
+{
+  "main_runs_expected": 12,
+  "main_runs_completed": 12,
+  "main_telemetry_rows": 30860769,
+  "full_telemetry_included": true,
+  "partition_key": "run_id stored in Hive folder path; other columns in each Parquet file",
+  "manifest_row_count_convention": "Data row count for Parquet/CSV; null for non-tabular files. Manifest omits itself to avoid circular hash.",
+  "zip_validation": "Final CRC, SHA-256, and extracted full Parquet read results are outside ZIP in deliverables/STATUS.json and experiments/unlabeled_v1/zip_validation.json."
+}

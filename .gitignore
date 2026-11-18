@@ -1,0 +1,22 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+# Local credentials and environment files
+/.aws/
+.env
+.env.*
+!.env.example
+
+# Generated simulation data and handoff archives
+/data/
+/deliverables/*.zip
+/deliverables/extracted_test_results.xml
+/experiments/*/runs/
+/experiments/*/datasets/
+/experiments/*/extracted_validation/
+/experiments/*/smoke*/
+/experiments/*/baseline/data/
+/experiments/*/diagnostics/**/tau_*_seed_*/
+/routes/*_900.rou.xml
+/run_*.sumocfg

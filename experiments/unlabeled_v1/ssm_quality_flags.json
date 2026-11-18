@@ -1,0 +1,71 @@
+{
+  "metrics": [
+    {
+      "metric": "minTTC",
+      "total_encounters": 79328,
+      "defined": 73535,
+      "missing": 5793,
+      "negative_values": 0,
+      "raw_nonfinite_values": 0,
+      "mean": 736.4655368169657,
+      "minimum": 0.0,
+      "p05": 0.0,
+      "median": 2.35745936,
+      "p95": 45.63632255200002
+    },
+    {
+      "metric": "maxDRAC",
+      "total_encounters": 79328,
+      "defined": 77469,
+      "missing": 1859,
+      "negative_values": 0,
+      "raw_nonfinite_values": 0,
+      "mean": 11.73200280988666,
+      "minimum": 0.0,
+      "p05": 0.000665952,
+      "median": 2.23152696,
+      "p95": 3.8169997499999986
+    },
+    {
+      "metric": "PET",
+      "total_encounters": 79328,
+      "defined": 4258,
+      "missing": 75070,
+      "negative_values": 25,
+      "raw_nonfinite_values": 0,
+      "mean": 4.1503765245984034,
+      "minimum": -8.36928189,
+      "p05": 0.8018336775000001,
+      "median": 1.86277325,
+      "p95": 7.889307913999995
+    },
+    {
+      "metric": "minPPET",
+      "total_encounters": 79328,
+      "defined": 31849,
+      "missing": 47479,
+      "negative_values": 22739,
+      "raw_nonfinite_values": 0,
+      "mean": -39.46557119691798,
+      "minimum": -478256.76005245,
+      "p05": -373.80109957799993,
+      "median": -0.94851801,
+      "p95": 3.2089896959999815
+    },
+    {
+      "metric": "maxMDRAC",
+      "total_encounters": 79328,
+      "defined": 74972,
+      "missing": 4356,
+      "negative_values": 29,
+      "raw_nonfinite_values": 0,
+      "mean": 57.72407173934081,
+      "minimum": -10.69571158,
+      "p05": 0.00022117000000000016,
+      "median": 3.664120455,
+      "p95": 31.16355515399999
+    }
+  ],
+  "interpretation": "Negative predicted clearance/MDRAC and very large surrogates are preserved native outputs, not clipped or converted into risk labels. Review geometry warnings and model validity before severity interpretation.",
+  "encounters_with_ttc_over_one_hour": 480
+}

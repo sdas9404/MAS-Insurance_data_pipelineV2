@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "main_runs": 12,
+  "driver_parameters_rows": 90,
+  "driver_run_metadata_rows": 1080,
+  "planned_study_trips": 10800,
+  "trip_summary_study_rows": 10800,
+  "trip_summary_background_rows": 18000,
+  "telemetry_rows": 30860769,
+  "observed_study_inserted": 9982,
+  "observed_study_arrived": 9646,
+  "observed_study_non_inserted": 818,
+  "observed_study_inserted_not_arrived": 336,
+  "all_12_run_driver_trip_counts_passed": true,
+  "all_foreign_keys_checked": true,
+  "deduplication_lossless": true,
+  "no_observed_driver_overlap": true
+}

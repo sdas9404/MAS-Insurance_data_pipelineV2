@@ -1,0 +1,30 @@
+# Simulation-side parameter sampler, NOT a persona or risk-label configuration.
+# Hypothetical priors for an unlabeled synthetic population; tune only after a pilot.
+seed: 20261117
+run_id: run_001
+n_drivers: 90
+trips_per_driver: 10
+wave_seconds: 3600
+wave_departure_window_seconds: 600
+simulation_step_seconds: 0.2
+# The collision model is not designed to guarantee real-world accident frequencies.
+# Unsafe behaviour is rare in this prior; no agent receives a predefined label.
+small_headway_tail_probability: 0.06
+red_light_noncompliance_probability: 0.08
+junction_priority_error_probability: 0.05
+bounds:
+  speedFactor: [0.77, 1.33]
+  accel: [1.2, 3.5]
+  decel: [3.2, 5.8]
+  sigma: [0.05, 0.9]
+  minGap: [0.9, 4.0]
+  lcStrategic: [0.4, 2.5]
+  lcCooperative: [0.05, 1.0]
+  lcSpeedGain: [0.25, 3.0]
+  lcKeepRight: [0.3, 2.5]
+  lcAssertive: [0.75, 2.0]
+  lcSigma: [0.0, 0.45]
+  startupDelay: [0.0, 1.5]
+  impatience: [0.0, 0.8]
+  length: [3.7, 5.3]
+  width: [1.65, 2.1]

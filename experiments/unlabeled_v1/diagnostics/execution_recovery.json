@@ -1,0 +1,22 @@
+{
+  "failures": [
+    {
+      "run_id": "run_010",
+      "seed": 2207,
+      "native_failure": "bad allocation",
+      "attempts": [
+        "runs\\run_010\\attempts\\1794957238717712000"
+      ],
+      "recovery": "Sequential rerun of identical frozen inputs; original attempt retained"
+    },
+    {
+      "run_id": "run_012",
+      "seed": 4409,
+      "native_failure": "bad allocation",
+      "attempts": [],
+      "recovery": "Sequential rerun of identical frozen inputs; original attempt retained"
+    }
+  ],
+  "concurrency_default_after_recovery": 1,
+  "no_main_prior_changes": true
+}

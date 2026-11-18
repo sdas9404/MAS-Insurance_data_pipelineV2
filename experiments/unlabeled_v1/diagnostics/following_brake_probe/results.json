@@ -1,0 +1,38 @@
+{
+  "excluded_from_main_dataset": true,
+  "purpose": "Compare low tau below actionStepLength with longer tau during planned leader stops; no speed override or disabled safety checks.",
+  "results": [
+    {
+      "tau": 0.35,
+      "seed": 1103,
+      "completed": 10,
+      "collisions": 4,
+      "ssm_reports": 10,
+      "min_ttc_s": 0.47
+    },
+    {
+      "tau": 0.35,
+      "seed": 2207,
+      "completed": 10,
+      "collisions": 4,
+      "ssm_reports": 10,
+      "min_ttc_s": 0.44
+    },
+    {
+      "tau": 1.5,
+      "seed": 1103,
+      "completed": 10,
+      "collisions": 0,
+      "ssm_reports": 10,
+      "min_ttc_s": 1.02
+    },
+    {
+      "tau": 1.5,
+      "seed": 2207,
+      "completed": 10,
+      "collisions": 0,
+      "ssm_reports": 10,
+      "min_ttc_s": 1.02
+    }
+  ]
+}
